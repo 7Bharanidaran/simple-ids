@@ -1,11 +1,11 @@
-#!/bin/bash
+
 
 LOG_FILE="logs/alerts.log"
 BASELINE_FILE="baseline/file_hashes.txt"
 
-echo "-------------------------------------" >> $LOG_FILE
+echo  >> $LOG_FILE
 echo "IDS Scan Started on: $(date)" >> $LOG_FILE
-echo "-------------------------------------" >> $LOG_FILE
+echo  >> $LOG_FILE
 
 FAILED_COUNT=$(grep "Failed password" /var/log/auth.log | wc -l)
 
